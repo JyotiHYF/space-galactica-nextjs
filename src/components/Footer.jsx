@@ -22,11 +22,15 @@ export const Footer = () => {
           <li>
             <Link href="/">Home</Link>
           </li>
+
+          <li>
+            <Link href="/about">About us</Link>
+          </li>
           <li>
             <Link href="/destination">Destinations</Link>
           </li>
           <li>
-            <Link href="/nasa_collaboration">Nasa Collaboration</Link>
+            <Link href="/nasa">Nasa Collaboration</Link>
           </li>
         </ul>
       </div>

@@ -1,6 +1,20 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌌 Space Galactica
 
-## Getting Started
+A space travel website built with Next.js App Router.  
+Includes destinations, wishlist system, and NASA collaboration features.
+
+## 🚀 Features
+
+- Space travel landing page
+- Interactive destination wishlist (Context API)
+- NASA collaboration page
+- About us section
+- Responsive design (mobile + desktop)
+- Next.js App Router structure
+
+## 🛠 Getting Started
+
+Install dependencies and run the development server:
 
 First, run the development server:
 
