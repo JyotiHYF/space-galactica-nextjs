@@ -1,0 +1,70 @@
+"use client";
+import Link from "next/link";
+import styles from "./Footer.module.css";
+import { usePathname } from "next/navigation";
+import SocialMediaItem from "./SocialMediaItem";
+
+export const Footer = () => {
+  const pathname = usePathname();
+  return (
+    <footer className={styles.footer}>
+      <div className={styles.footerDescription}>
+        <h3>Galactica</h3>
+        <p>
+          Explore the universe and beyond. Your journey to the stars starts
+          here.
+        </p>
+        <p>&copy; 2024 Galactica. All rights reserved.</p>
+      </div>
+      <div className={styles.pages}>
+        <h3>Pages</h3>
+        <ul>
+          <li>
+            <Link href="/">Home</Link>
+          </li>
+          <li>
+            <Link href="/destination">Destinations</Link>
+          </li>
+          <li>
+            <Link href="/nasa_collaboration">Nasa Collaboration</Link>
+          </li>
+        </ul>
+      </div>
+
+      <div className={styles.footerLinks}>
+        <h3>Follow us</h3>
+        <ul className={styles.footerList}>
+          <SocialMediaItem
+            url="https://facebook.com"
+            title="Facebook"
+            icon="/socialmedia/facebook.png"
+          />
+
+          <SocialMediaItem
+            url="https://instagram.com"
+            title="Instagram"
+            icon="/socialmedia/instagram.png"
+          />
+
+          <SocialMediaItem
+            url="https://www.tittok.com"
+            title="Tiktok"
+            icon="/socialmedia/tiktok.png"
+          />
+
+          <SocialMediaItem
+            url="https://LinkedIn.com"
+            title="LinkedIn"
+            icon="/socialmedia/linkedin.png"
+          />
+
+          <SocialMediaItem
+            url="https://google.com"
+            title="On the streets at night"
+            icon="/socialmedia/chrome.png"
+          />
+        </ul>
+      </div>
+    </footer>
+  );
+};
